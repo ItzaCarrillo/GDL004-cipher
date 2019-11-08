@@ -6,37 +6,36 @@
     <link rel="stylesheet" href="style.css" />
 
   </head>
-  <body>
-    {
+  <body>{
     <div id="root">
 
       <h1>Safe Message</h1>
-      <p>Welcome to Safe Message</p>
-      <p>Choose your offset below to encrypt or decrypt message</p>
+        <p>Welcome to Safe Message</p>
+        <p>Choose your offset below to encrypt or decrypt message</p>
 
-      <label for="offsetValue">Offset:</label>
-      <input type="number" id="offsetValue" id="pOffset" offset="" required>
+        <label for="offsetValue">Offset:</label>
+        <input type="number" id="offsetValue" id="pOffset" offset="" required>
+      </div>
+
+      <br />
+      <br />
+      <textarea id="txtToMod" rows="5" cols="50"></textarea>
+      <br />
+
+      <div class="wrapButtons">
+        <button type="submit" name="encrypt" onclick="sendMessagetoEncode()">Encrypt</button>
+        <button type="submit" name="decrypt" onclick="sendMessagetoDecode()">Decrypt</button>
+      </div>
+
+      <br />
+      <br />
+      <textarea readonly id="resultMessage" rows="5" cols="50"></textarea>
+      <br />
+
+       <center><button type="reset" onclick="reset()">Reset</button></center> 
+      
     </div>
-
-    <br />
-    <br />
-    <textarea id="txtToMod" rows="5" cols="50"></textarea>
-    <br />
-
-    <div class="wrapButtons">
-      <button type="submit" name="encrypt" onclick="sendMessagetoEncode()">Encrypt</button>
-      <button type="submit" name="decrypt" onclick="sendMessagetoDecode()">Decrypt</button>
-    </div>
-
-    <br />
-    <br />
-    <textarea readonly id="resultMessage" rows="5" cols="50"></textarea>
-    <br />
-
-    <center><button type="reset" onclick="reset()">Reset</button></center>
-
-    </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+</body>
 </html>

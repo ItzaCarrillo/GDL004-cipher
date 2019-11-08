@@ -16,8 +16,8 @@ function sendMessagetoEncode() {                                               /
     alert("Please enter valid text. No lowercase or special characters allowed.");
   }
   else {
-    offsetElement = document.getElementById("offsetValue");
-    offsetValue = offsetElement.value;
+    let offsetElement = document.getElementById("offsetValue");
+    let offsetValue = offsetElement.value;
     if (offsetValue == "") {
       alert("Please enter an offset value");
     }
@@ -34,14 +34,13 @@ function sendMessagetoDecode() {
     alert("Please enter valid text. No lowercase or special characters allowed.");
   }
   else {
-    offsetElement = document.getElementById("offsetValue");
-    offsetValue = offsetElement.value;
+    let offsetElement = document.getElementById("offsetValue");
+    let offsetValue = offsetElement.value;
     if (offsetValue == "") {
       alert("Please enter an offset value");
     }
     else {
       resultMessage.innerText = decipher(offsetValue, decryptMessage.value);
-      resultMessage.removeAttribute("hidden");
     }
   }
 }
