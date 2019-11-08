@@ -1,0 +1,58 @@
+
+body {
+  background-image: url(http://img2.rtve.es/i/?w=1600&i=1566230149486.jpg)
+}
+
+div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  color: whitesmoke;
+  text-shadow:3px 3px 2px black;
+  font-family: fantasy;
+  font-size: 35px;
+  text-align: center;
+}
+
+p{
+  color: cornflowerblue;
+  font-family: fantasy;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+
+input[type="number"] {
+  background-color: cornflowerblue;
+  width: 50px;
+  margin: auto;
+  display: block;
+  background-color: lavender;
+}
+
+textarea {
+  background-color: lavender;
+  font-family:'Comic Sans MS';
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapButtons {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+.wrapOffset {
+  color: cornflowerblue;
+  font-family: fantasy;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>{
+    <div id="root">
+
+    <div id="justCapitalLetters">
+      <h1>Safe message</h1>
+        <p>Ingresa tu nombre</p>
+        <input type="text" id="name" >
+        <input type="button" name="guardar"onclick="saveName()" value="Siguiente">
+
+        <p hidden id="saludo"></p>
+
+        <textarea id="encryptMessage" rows="10" cols="70" ></textarea>
+        <p>Click the "Encrypt" button or "Decrypt" button to get the text in the text field.</p>
+        <button type="button" name="guardar"onclick="myFuction" ">Encrypt</button>
+        <p id = "results"></p>
+
+        <button type="submit"onclick="decrypt">Decrypt</button>
+
+
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

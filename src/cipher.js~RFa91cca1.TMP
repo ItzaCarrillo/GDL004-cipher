@@ -1,0 +1,16 @@
+window.cipher = {
+  // Acá escribe tu código.
+};
+
+}
+//funcion para encriptar el mensaje
+function encrypt() {
+  let message, elementoUserMessage;
+  elementoUserMessage = document.getElementById("encryptMessage").value;
+  document.getElementById("results").innerHTML = "message";
+}
+// funcion para desencriptar el mensaje
+function decrypt() {
+  var message = document.GetElementsByMyMessage("decrypts").value;
+
+}

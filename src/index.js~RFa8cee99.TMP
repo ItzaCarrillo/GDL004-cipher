@@ -1,0 +1,41 @@
+var nombreUsuario;
+function saveName(){
+var parrafo, elementoNombreUsuario;
+  elementoNombreUsuario = document.getElementById("name");
+
+  nombreUsuario = elementoNombreUsuario.value;
+  parrafo = document.getElementById("saludo");
+  parrafo.removeAttribute("hidden");
+  parrafo.innerHTML = "Hellow " + nombreUsuario + " " +"write your message of encrypt or decrypt here";
+  elementoNombreUsuario.value = "";
+}
+
+function abc(justCapitalLetters) {
+     var title = document.getElementById(justCapitalLetters);
+     var regExp = /^[A-Z]*$/
+     if (!regExp.test(title.value)) {
+        title.value = '';
+        return false;
+        }
+      else {
+           return true;
+        }
+   }
+   function Validation(){
+ var txtTitles = document.getElementById('txtTitle');
+  if (isValidCharacter(txtTitles.id) == false) {
+   alert("Please enter valid title. No special character allowed.");
+    return false;
+  }
+ }
+
+
+
+   $("#Btn").unbind("click").click(function () {
+        if (Validation() == false) {
+
+        }
+        else {
+              //success
+        }
+   }
